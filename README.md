@@ -1,3 +1,4 @@
+
 # Password Generator CLI
 
 Консольная утилита для генерации случайных паролей с настраиваемыми параметрами.
@@ -18,3 +19,32 @@
 ```bash
 git clone <URL_репозитория>
 cd password-generator-cli
+
+Запуск
+
+Пример запуска генератора паролей:
+
+python main.py --length 16 --symbols
+
+
+Параметры
+
+--length — длина пароля (по умолчанию 12)
+
+--no-lower — исключить строчные буквы
+
+--no-upper — исключить заглавные буквы
+
+--no-digits — исключить цифры
+
+--symbols — включить специальные символы
+
+Структура проекта
+password-generator-cli/
+├── README.md
+├── .gitignore
+├── requirements.txt
+├── main.py
+└── src/
+    └── generator.py
+
